@@ -1,28 +1,28 @@
 export type User = {
   _id: string;
   email: string;
-  nome: string;
-  endereco: string;
-  cidade: string;
-  pais: string;
+  name: string;
+  addressLine1: string;
+  city: string;
+  country: string;
 };
 
 export type MenuItem = {
   _id: string;
-  nome: string;
-  preco: number;
+  name: string;
+  price: number;
 };
 
 export type Restaurant = {
   _id: string;
   user: string;
-  NomeRestaurante: string;
-  Cidade: string;
-  Pais: string;
-  precoentrega: number;
+  restaurantName: string;
+  city: string;
+  country: string;
+  deliveryPrice: number;
   estimatedDeliveryTime: number;
-  cozinhas: string[];
-  Carrinho: MenuItem[];
+  cuisines: string[];
+  menuItems: MenuItem[];
   imageUrl: string;
   lastUpdated: string;
 };

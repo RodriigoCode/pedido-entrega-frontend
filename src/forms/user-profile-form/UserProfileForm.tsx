@@ -18,10 +18,10 @@ import { useEffect } from "react";
 
 const formSchema = z.object({
   email: z.string().optional(),
-  nome: z.string().min(1, "name is required"),
-  endereco: z.string().min(1, "Address Line 1 is required"),
-  cidade: z.string().min(1, "City is required"),
-  pais: z.string().min(1, "Country is required"),
+  name: z.string().min(1, "name is required"),
+  addressLine1: z.string().min(1, "Address Line 1 is required"),
+  city: z.string().min(1, "City is required"),
+  country: z.string().min(1, "Country is required"),
 });
 
 export type UserFormData = z.infer<typeof formSchema>;
@@ -77,7 +77,7 @@ const UserProfileForm = ({
 
         <FormField
           control={form.control}
-          name="nome"
+          name="name"
           render={({ field }) => (
             <FormItem>
               <FormLabel>Name</FormLabel>
@@ -92,7 +92,7 @@ const UserProfileForm = ({
         <div className="flex flex-col md:flex-row gap-4">
           <FormField
             control={form.control}
-            name="endereco"
+            name="addressLine1"
             render={({ field }) => (
               <FormItem className="flex-1">
                 <FormLabel>Address Line 1</FormLabel>
@@ -105,7 +105,7 @@ const UserProfileForm = ({
           />
           <FormField
             control={form.control}
-            name="cidade"
+            name="city"
             render={({ field }) => (
               <FormItem className="flex-1">
                 <FormLabel>City</FormLabel>
@@ -118,7 +118,7 @@ const UserProfileForm = ({
           />
           <FormField
             control={form.control}
-            name="pais"
+            name="country"
             render={({ field }) => (
               <FormItem className="flex-1">
                 <FormLabel>Country</FormLabel>
