@@ -7,11 +7,11 @@ const OrderStatusPage = () => {
   const { orders, isLoading } = useGetMyOrders();
 
   if (isLoading) {
-    return "Loading...";
+    return "A carregar...";
   }
 
   if (!orders || orders.length === 0) {
-    return "No orders found";
+    return "Nenhum pedido encontrado.";
   }
 
   return (

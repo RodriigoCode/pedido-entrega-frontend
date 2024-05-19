@@ -14,7 +14,7 @@ const Auth0ProviderWithNavigate = ({ children }: Props) => {
   const audience = import.meta.env.VITE_AUTH0_AUDIENCE;
 
   if (!domain || !clientId || !redirectUri || !audience) {
-    throw new Error("unable to initialise auth");
+    throw new Error("não foi possível iniciar a autenticação");
   }
 
   const onRedirectCallback = (appState?: AppState) => {

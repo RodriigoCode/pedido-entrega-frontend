@@ -50,25 +50,25 @@ const OrderItemCard = ({ order }: Props) => {
       <CardHeader>
         <CardTitle className="grid md:grid-cols-4 gap-4 justify-between mb-3">
           <div>
-            Customer Name:
+            Nome do Cliente:
             <span className="ml-2 font-normal">
               {order.deliveryDetails.name}
             </span>
           </div>
           <div>
-            Delivery address:
+          Endereço de entrega:
             <span className="ml-2 font-normal">
               {order.deliveryDetails.addressLine1}, {order.deliveryDetails.city}
             </span>
           </div>
           <div>
-            Time:
+            Tempo:
             <span className="ml-2 font-normal">{getTime()}</span>
           </div>
           <div>
-            Total Cost:
+            Custo Total:
             <span className="ml-2 font-normal">
-              £{(order.totalAmount / 100).toFixed(2)}
+              €{(order.totalAmount / 100).toFixed(2)}
             </span>
           </div>
         </CardTitle>
@@ -86,7 +86,7 @@ const OrderItemCard = ({ order }: Props) => {
           ))}
         </div>
         <div className="flex flex-col space-y-1.5">
-          <Label htmlFor="status">What is the status of this order?</Label>
+          <Label htmlFor="status">Qual é o estado deste pedido?</Label>
           <Select
             value={status}
             disabled={isLoading}

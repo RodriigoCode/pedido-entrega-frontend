@@ -18,7 +18,7 @@ export const useGetMyOrders = () => {
     });
 
     if (!response.ok) {
-      throw new Error("Failed to get orders");
+      throw new Error("Falha ao receber pedidos");
     }
 
     return response.json();
@@ -71,7 +71,7 @@ export const useCreateCheckoutSession = () => {
     );
 
     if (!response.ok) {
-      throw new Error("Unable to create checkout session");
+      throw new Error("Não foi possível criar sessão de checkout");
     }
 
     return response.json();

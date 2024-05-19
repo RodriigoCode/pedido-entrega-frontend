@@ -14,9 +14,9 @@ import {
     return (
       <div className="space-y-2">
         <div>
-          <h2 className="text-2xl font-bold">Details</h2>
+          <h2 className="text-2xl font-bold">Detalhes</h2>
           <FormDescription>
-            Enter the details about your restaurant
+            Insira os detalhes do seu restaurante
           </FormDescription>
         </div>
         <FormField
@@ -24,7 +24,7 @@ import {
           name="restaurantName"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Name</FormLabel>
+              <FormLabel>Nome</FormLabel>
               <FormControl>
                 <Input {...field} className="bg-white" />
               </FormControl>
@@ -38,7 +38,7 @@ import {
             name="city"
             render={({ field }) => (
               <FormItem className="flex-1">
-                <FormLabel>City</FormLabel>
+                <FormLabel>Cidade</FormLabel>
                 <FormControl>
                   <Input {...field} className="bg-white" />
                 </FormControl>
@@ -51,7 +51,7 @@ import {
             name="country"
             render={({ field }) => (
               <FormItem className="flex-1">
-                <FormLabel>Country</FormLabel>
+                <FormLabel>Pais</FormLabel>
                 <FormControl>
                   <Input {...field} className="bg-white" />
                 </FormControl>
@@ -66,7 +66,7 @@ import {
           name="deliveryPrice"
           render={({ field }) => (
             <FormItem className="max-w-[25%]">
-              <FormLabel>Delivery price (£)</FormLabel>
+              <FormLabel>Preço de entrega (€)</FormLabel>
               <FormControl>
                 <Input {...field} className="bg-white" placeholder="1.50" />
               </FormControl>
@@ -79,7 +79,7 @@ import {
           name="estimatedDeliveryTime"
           render={({ field }) => (
             <FormItem className="max-w-[25%]">
-              <FormLabel>Estimated Delivery Time (minutes)</FormLabel>
+              <FormLabel>Tempo de entrega estimado (minutos)</FormLabel>
               <FormControl>
                 <Input {...field} className="bg-white" placeholder="30" />
               </FormControl>

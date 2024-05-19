@@ -14,9 +14,9 @@ import {
     return (
       <div className="space-y-2">
         <div>
-          <h2 className="text-2xl font-bold">Cuisines</h2>
+          <h2 className="text-2xl font-bold">Tipos de Cozinhados</h2>
           <FormDescription>
-            Select the cuisines that your restaurant serves
+            Selecione os cozinhados do seu restaurante
           </FormDescription>
         </div>
         <FormField

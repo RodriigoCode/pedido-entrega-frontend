@@ -16,11 +16,11 @@ const HomePage = () => {
     <div className="flex flex-col gap-12">
       <div className="md:px-32 bg-white rounded-lg shadow-md py-8 flex flex-col gap-5 text-center -mt-16">
         <h1 className="text-5xl font-bold tracking-tight text-orange-600">
-          Tuck into a takeway today
+          Faça um pedido
         </h1>
-        <span className="text-xl">Food is just a click away!</span>
+        <span className="text-xl">Está a um clique!</span>
         <SearchBar
-          placeHolder="Search by City or Town"
+          placeHolder="Procure por Cidade ou Vila"
           onSubmit={handleSearchSubmit}
         />
       </div>
@@ -28,11 +28,10 @@ const HomePage = () => {
         <img src={landingImage} />
         <div className="flex flex-col items-center justify-center gap-4 text-center">
           <span className="font-bold text-3xl tracking-tighter">
-            Order takeaway even faster!
+            Faça o seu pedido ainda mais rápido
           </span>
           <span>
-            Download the MernEats App for faster ordering and personalised
-            recommendations
+            Instale a aplicação para um pedido mais rápido e eficaz, com opções personalizadas.
           </span>
           <img src={appDownloadImage} />
         </div>
