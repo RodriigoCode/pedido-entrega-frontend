@@ -35,7 +35,7 @@ const SearchResultCard = ({ restaurant }: Props) => {
           <div className="flex gap-2 flex-col">
             <div className="flex items-center gap-1 text-green-600">
               <Clock className="text-green-600" />
-              {restaurant.estimatedDeliveryTime} mins
+              {restaurant.estimatedDeliveryTime} minutos
             </div>
             <div className="flex items-center gap-1">
               <Banknote />
