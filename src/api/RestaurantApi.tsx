@@ -11,7 +11,7 @@ export const useGetRestaurant = (restaurantId?: string) => {
     );
 
     if (!response.ok) {
-      throw new Error("Failed to get restaurant");
+      throw new Error("Falha ao obter restaurante");
     }
 
     return response.json();

@@ -17,11 +17,11 @@ const SORT_OPTIONS = [
     value: "bestMatch",
   },
   {
-    label: "Delivery price",
+    label: "Preço de entrega",
     value: "deliveryPrice",
   },
   {
-    label: "Estimated delivery time",
+    label: "Tempo de entrega estimado",
     value: "estimatedDeliveryTime",
   },
 ];
@@ -35,7 +35,7 @@ const SortOptionDropdown = ({ onChange, sortOption }: Props) => {
     <DropdownMenu>
       <DropdownMenuTrigger className="cursor-pointer">
         <Button variant="outline" className="w-full">
-          Sort by: {selectedSortLabel}
+        Ordenar por: {selectedSortLabel}
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent>
