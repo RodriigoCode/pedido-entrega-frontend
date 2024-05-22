@@ -3,7 +3,6 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { useMutation, useQuery } from "react-query";
 import { toast } from "sonner";
 
-
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 export const useGetMyUser = () => {
@@ -60,7 +59,7 @@ export const useCreateMyUser = () => {
     });
 
     if (!response.ok) {
-      throw new Error("Falha ao criar utilizador");
+      throw new Error("Failed to create user");
     }
   };
 
@@ -102,7 +101,7 @@ export const useUpdateMyUser = () => {
     });
 
     if (!response.ok) {
-      throw new Error("Falha ao atualizar o utilizador");
+      throw new Error("Failed to update user");
     }
 
     return response.json();
@@ -117,7 +116,7 @@ export const useUpdateMyUser = () => {
   } = useMutation(updateMyUserRequest);
 
   if (isSuccess) {
-    toast.success("Utilizador Atualizado");
+    toast.success("User profile updated!");
   }
 
   if (error) {
